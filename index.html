@@ -3,41 +3,200 @@
 <head>
 <title> Mohith AV </title>
 <style>
-    body { background-image: url('background 1d.jpg');
+    body { background-image: url('background new.jpg');
            background-repeat: no-repeat;
            background-attachment: fixed;
            background-size: 100% 100%;}
-    h2   { color: white}
-    p    { color: white}
+    h2   { color:black}
+    p    { color:#800020;
+           font-size: 17px;}
     a    { color: white}
+    main-content {min-height: 200%}
+    
+/* 
+========================
+      BUTTONS
+========================
+*/
+ 
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+ 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+ 
+div[class*=box] {
+  height: 33.33%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+}
+ 
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+ 
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+ 
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+ 
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+ 
+/* 
+========================
+      BUTTONS
+========================
+*/
+
+div.contact {
+  position: relative;
+  top: -200px;
+  left: 770px;
+}
+
+
+div.home {
+  position: relative;
+  top: -100px;
+  left: 330px;
+}
+
+div.about {
+  position: relative;
+  top: -150px;
+  left: 550px;
+  
+}
+
 </style>
 </head>
 <body>
 <div class="header" id="header">
-    <p><img src="logo 2a.png"  style="float:left;width:300px;height: 160px;" ><br>
+    <p><img src="logo 2a.png"  style="float:left;width:310px;height: 160px;" ><br>
 
-<div class="menu"></div>
- <a href="index.html"> <img src="home.png" width="100px" height="50px"> </a>       <a href="about.html"> <img src="about.png" width="100px" height="50px"></a>      <a href="contact.html"> <img src="contact.png" width="100px" height="50px"> </a>
-</div>
+<div class="menu">
+
+  <div class="home">
+    <a href="index.html">
+      <div class="box-1">
+        <div class="btn btn-one">
+          <span>Home</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+
+      <div class="about">
+        <a href="about.html">
+          <div class="box-1">
+            <div class="btn btn-one">
+              <span>About</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact">
+        <a href="contact.html">
+          <div class="box-1">
+            <div class="btn btn-one">
+              <span>Contact</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
 
 <div class="main-content"></div>
-     <h2> About Me </h2>
-          <p> Hi readers, I'm Mohith and I'm a student studying at Sri Amogha Junior College(SAJC). I'm an ambivert
-        and I love to code a lot well by this you may have understood that I'm a workaholic and I'm a caffeine 
-        addict. My interest and hobbies are eating, Playing mobile games, reading fictional and non-fictional 
-        books, making silk handicrafts and many more. I'm a man of few words and I never beat around the bush. I 
-        have a really good taste in many things like clothing, perfumes and more.....</p>
+     <h1><b> About Me </b></h1>
+          <p> Hi readers, I'm Mohith and I'm a student studying at Sri Amogha Junior College(SAJC). 
+              I'm an ambivert and I love to code a lot well by this you may have understood that 
+              I'm a workaholic and I'm a caffeine addict. My interest and hobbies are eating, 
+              Playing mobile games, reading fictional and non-fictional books, making silk 
+              handicrafts and many more. I'm a man of few words and I never beat around the bush. I 
+              have a really good taste in many things like clothing, perfumes and more.....
+            </p>
         
-    
+    <p>  <a href="about.html"><u> CONTINUE READING..........</u></a></p>    
     <br>    
    
-    <h2 style="color:black;"> New changes done to the page </h2><br>
-        <p>1. Added a background</p>
-        <p>2. Added an audio file </p>
-        <p>3. Made changes in the header</p>
-        <p>4. Applied the different changes required for the other pages( about, contact, home).
+   
     
 </div>
 <div class="footer"> </div>
 </body>
 </html>
+
