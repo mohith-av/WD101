@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title> Mohith AV </title>
-<style>
-    body { background-image: url('contact background.jpg');
-           background-repeat: no-repeat;
-           background-attachment: fixed;
-           background-size: 100% 100%;}
-    h2   { color:white}
-    p    { color:rgba(19, 17, 17, 0.973) }
-    a    { color: white}
-    main-content {min-height: 200%}
+  <title> Mohith AV </title>
+  <style>
+    body {
+      background-image: url('contact background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    h2 {
+      color: white
+    }
+
+    p {
+      color: rgba(19, 17, 17, 0.973)
+    }
+
+    a {
+      color: white
+    }
+
+    main-content {
+      min-height: 200%
+    }
+
     div.relative {
-  position: relative;
-  left: 0px;
-  top: -10px;
-    }  
+      position: relative;
+      left: 0px;
+      top: -10px;
+    }
+
     div.relative1 {
-  position: relative;
-  left: 0px;
-  top: -10px;
-    } 
-    
-/* 
+      position: relative;
+      left: 0px;
+      top: -10px;
+    }
+
+    /* 
 ========================
       BUTTONS
 ========================
 */
- 
+
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
- 
+
 html,
 body {
   width: 100%;
@@ -41,25 +58,25 @@ body {
   flex-wrap: wrap;
   font-family: 'Open Sans Condensed', sans-serif;
 }
- 
+
 div[class*=box] {
   height: 33.33%;
-  width: 100%; 
+  width: 100%;
   display: flex;
   align-items: center;
-} 
- 
+}
+
 .btn {
   line-height: 50px;
   height: 50px;
   text-align: center;
   width: 200px;
   cursor: pointer;
-} 
- 
+}
+
 /* 
 ========================
-      BUTTON ONE
+  BUTTON ONE
 ========================
 */
 .btn-one {
@@ -67,9 +84,11 @@ div[class*=box] {
   transition: all 0.3s;
   position: relative;
 }
+
 .btn-one span {
   transition: all 0.3s;
 }
+
 .btn-one::before {
   content: '';
   position: absolute;
@@ -84,17 +103,20 @@ div[class*=box] {
   border-bottom-width: 1px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.5);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
   transform: scale(0.1, 1);
 }
+
 .btn-one:hover span {
   letter-spacing: 2px;
 }
+
 .btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
+
 .btn-one::after {
   content: '';
   position: absolute;
@@ -104,28 +126,29 @@ div[class*=box] {
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
+
 .btn-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
- 
+
 a:link {
   color: white;
   background-color: transparent;
   text-decoration: none;
 }
- 
+
 a:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
 }
- 
+
 /* 
 ========================
-      BUTTONS
+  BUTTONS
 ========================
 */
 
@@ -133,7 +156,7 @@ div.contact {
   position: relative;
   top: -200px;
   left: 770px;
-} 
+}
 
 
 div.home {
@@ -146,15 +169,14 @@ div.about {
   position: relative;
   top: -150px;
   left: 550px;
-  
-} 
 
+}
 </style>
 </head>
+
 <body>
 <div class="header" id="header">
-    <p><img src="logo 2a.png"  style="float:left;width:310px;height: 160px;" > </div>
-
+<p><img src="logo 2a.png" style="float:left;width:310px;height: 160px;">
 <div class="menu">
 
   <div class="home">
@@ -168,30 +190,40 @@ div.about {
   </div>
 
 
-      <div class="about">
-        <a href="about.html">
-          <div class="box-1">
-            <div class="btn btn-one">
-              <span>About</span>
-            </div>
-          </div>
-        </a>
+  <div class="about">
+    <a href="about.html">
+      <div class="box-1">
+        <div class="btn btn-one">
+          <span>About</span>
+        </div>
       </div>
+    </a>
+  </div>
 
-      <div class="contact">
-        <a href="contact.html">
-          <div class="box-1">
-            <div class="btn btn-one">
-              <span>Contact</span>
-            </div>
-          </div>
-        </a>
+  <div class="contact">
+    <a href="contact.html">
+      <div class="box-1">
+        <div class="btn btn-one">
+          <span>Contact</span>
+        </div>
       </div>
+    </a>
+  </div>
+
 </div>
-<h2> You can find me at <h2>
-<div class="relative">
-<a href="https://www.instagram.com/mohith_av/"> <img src="instagram logo.png" height="45px" width="100px"></a></div>
-<div class="relative1">
-<a href="https://twitter.com/MohithVaddi"> <img src="twitter logo.png" height="50px" width="50px"></a></div>
+
+
+
+
+</div>
+
+  <h2> You can find me at <h2>
+      <div class="relative">
+        <a href="https://www.instagram.com/mohith_av/"> <img src="instagram logo.png" height="45px" width="100px"></a>
+      </div>
+      <div class="relative1">
+        <a href="https://twitter.com/MohithVaddi"> <img src="twitter logo.png" height="50px" width="50px"></a>
+      </div>
 </body>
+
 </html>
