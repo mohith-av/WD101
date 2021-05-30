@@ -21,13 +21,13 @@ body {
     min-height: 200%
   }
 
-  div.relative {
+  div.instagram {
     position: relative;
     left: 15px;
     top: -10px;
   }
 
-  div.relative1 {
+  div.twitter {
     position: relative;
     left: 15px;
     top: -10px;
