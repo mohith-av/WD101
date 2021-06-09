@@ -181,7 +181,10 @@ BUTTONS
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
 }
+
+
 
 *:focus,
 *:active {
@@ -192,6 +195,7 @@ BUTTONS
 
 .wrapper {
   display: inline-flex;
+  
 }
 
 .wrapper .icon {
