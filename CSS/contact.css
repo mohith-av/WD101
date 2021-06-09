@@ -1,5 +1,5 @@
 body {
-    background-image: url('Images/contact background.jpg');
+    background-image: url('../Images/contact.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -189,15 +189,6 @@ BUTTONS
   -webkit-tap-highlight-color: transparent;
 }
 
-html,
-body {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  place-items: center;
- 
-}
 
 .wrapper {
   display: inline-flex;
